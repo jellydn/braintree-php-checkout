@@ -101,7 +101,7 @@
           <div class='col-md-12 form-group'>
           <h1>Payment page</h1>
           <hr class="featurette-divider"></hr>
-          <p>NOTE: Please enter your credit card information.</p>
+          <p>By clicking "Confirm," you are agreeing to an immediate charge of $500 for conditional access into the Exponential Think Tank. After your application is reviewed, you will either be declared a member in good standing or subject to refund. If you are not a good fit, a refund for the entire $500 will be given. If you're found to be the type of member we're looking for, you'll be billed $500 every 30 days until you cancel. You are welcome to cancel at any time.</p>
           </div>
           <form action="/checkout.php" class="require-validation" id="checkout" method="post">
             <div class='form-row'>
@@ -132,7 +132,7 @@
             <div class='form-row'>
               <div class='col-md-12 form-group'>
                          <hr class="featurette-divider"></hr>
-                <button class='form-control btn btn-primary submit-button' type='submit'> Pay »</button>
+                <button class='form-control btn btn-primary submit-button' type='submit'> Confirm »</button>
                 
               </div>
             </div>

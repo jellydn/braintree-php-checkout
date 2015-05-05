@@ -2,7 +2,8 @@
     "require": {
 		"braintree/braintree_php" : "2.38.0",
 		"vlucas/phpdotenv": "^1.1",
-		"maximebf/debugbar": "1.*"
+		"maximebf/debugbar": "1.*",
+        "mailgun/mailgun-php": "^1.7"
 
     }
 }

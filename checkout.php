@@ -137,9 +137,11 @@
                   )
               ));
 
+              $debugbar["messages"]->addMessage($result);
+
               if(!$result->success)
               {
-                  echo 'You have error: ';
+                  echo 'You have error: '. $result->message;
                   foreach($result->errors->deepAll() AS $error) {
                     echo( $error->message . "\n");
                   }
@@ -153,7 +155,7 @@
                   
                   $subscription = Braintree_Subscription::create(array(
                       'paymentMethodToken' => $paymentMethodToken,
-                      'planId' => 'silver_plan',
+                      'planId' => getenv('PLAN_ID'),
                       'merchantAccountId'  => getenv('MERCHANT_ACCOUNT_ID')
                   ));
                   $debugbar["messages"]->addMessage($subscription);
@@ -196,7 +198,7 @@
         <div class="container">      
         <div class="row">
         <div class="col-sm-10 col-sm-offset-1"> 
-        <form class="form-horizontal" action='https://docs.google.com/forms/d/<?php echo getenv('GOOGLE_FORM_ID') ?>/formResponse' method="POST">
+        <form id="checkout" class="form-horizontal" action='https://docs.google.com/forms/d/<?php echo getenv('GOOGLE_FORM_ID') ?>/formResponse' method="POST">
         <fieldset>
           <div id="legend">
             <legend class="">Exponential Think Tank Application Form
@@ -216,7 +218,7 @@
             ['label' => 'State', 'name' => 'entry.1934645074', 'id' => 'entry_1934645074', 'type' => 'text', 'value' => '','required' => ''],
             ['label' => 'Zip Code', 'name' => 'entry.16080537', 'id' => 'entry_16080537', 'type' => 'text', 'value' => '','required' => ''],
             ['label' => 'Country', 'name' => 'entry.294735419', 'id' => 'entry_294735419', 'type' => 'text', 'value' => '','required' => 'required'],
-            ['label' => 'Gender', 'name' => 'entry.1140435882', 'id' => 'entry_1140435882', 'type' => 'select', 'value' => ['Female','Male','Other'],'required' => 'required'],
+            // ['label' => 'Gender', 'name' => 'entry.1140435882', 'id' => 'entry_1140435882', 'type' => 'select', 'value' => ['Female','Male','Other'],'required' => 'required'],
             ['label' => 'Personal Website', 'name' => 'entry.956248565', 'id' => 'entry_956248565', 'type' => 'text', 'value' => '','required' => ''],
             ['label' => 'LinkedIn Profile URL', 'name' => 'entry.2014048069', 'id' => 'entry_2014048069', 'type' => 'text', 'value' => '','required' => ''],
             ['label' => 'Twitter handle', 'name' => 'entry.624236440', 'id' => 'entry_624236440', 'type' => 'text', 'value' => '','required' => ''],
@@ -264,11 +266,11 @@
 </p>
 
           <?php
-          $formElements = [
+          $formElements2 = [
             ['label' => 'Company Name', 'name' => 'entry.1641283134', 'id' => 'entry_1641283134', 'type' => 'text', 'value' => '','required' => ''],
             ['label' => 'Company Website', 'name' => 'entry.602407668', 'id' => 'entry_602407668', 'type' => 'text', 'value' => '','required' => ''],
           ];
-          foreach($formElements as $item): ?>
+          foreach($formElements2 as $item): ?>
           <div class="control-group">
             <label class="control-label"  for="<?php echo $item['label']; ?>"><?php echo $item['label'] ?></label>
             <div class="controls">
@@ -305,12 +307,12 @@
           </div>
     
           <?php
-          $formElements = [
+          $formElements3 = [
             ['label' => 'Your title', 'name' => 'entry.868883626', 'id' => 'entry_868883626', 'type' => 'text', 'value' => '','required' => ''],
             ['label' => 'Select your Industry', 'name' => 'entry.238603809', 'id' => 'entry_238603809', 'type' => 'checkbox', 'value' => ['Agriculture','Grocery','Accounting','Health Care','Advertising','Internet Publishing','Aerospace','Investment Banking','Aircraft','Legal','Manufacturing','Apparel & Accessories','Motion Picture & Video','Automotive','Music','Banking','Online Auctions','Brokerage, M&A','Biotechnology','Pharmaceuticals','Call Centers','Private Equity','Cargo Handling','Publishing','Chemical','Real Estate','Copywriting, Marketing','Retail & Wholesale','Consulting','Securities & Commodity Exchanges','Consumer Products','Service','Cosmetics','Defense','Software','Sports','Education','Technology','Electronics','Telecommunications','Energy','Television','Entertainment & Leisure','Transportation','Executive Search','Trucking','Financial Services','Venture Capital','Food, Beverage & Tobacco'],'required' => ''],
             ['label' => 'What does your company do in this industry?', 'name' => 'entry.1459909749', 'id' => 'entry_1459909749', 'type' => 'text', 'value' => '','required' => ''],
           ];
-          foreach($formElements as $item): ?>
+          foreach($formElements3 as $item): ?>
           <div class="control-group">
             <label class="control-label"  for="<?php echo $item['label']; ?>"><?php echo $item['label'] ?></label>
             <div class="controls">
@@ -361,7 +363,7 @@
           </div>
     
           <?php
-          $formElements = [
+          $formElements4 = [
             ['label' => 'How many startups have you been involved with?', 'name' => 'entry.730808914', 'id' => 'entry_730808914', 'type' => 'text', 'value' => '','required' => ''],
             ['label' => 'For your current startup (if applicable), what problem are you solving?', 'name' => 'entry.106485643', 'id' => 'entry_106485643', 'type' => 'text', 'value' => '','required' => ''],
             ['label' => 'How big is your team? How many employees, partners, etc?', 'name' => 'entry.2018857417', 'id' => 'entry_2018857417', 'type' => 'text', 'value' => '','required' => ''],
@@ -372,7 +374,7 @@
             ['label' => 'What is the single largest outcome you\'re looking to achieve by joining?', 'name' => 'entry.144640973', 'id' => 'entry_144640973', 'type' => 'textarea', 'value' => '','required' => ''],
             ['label' => 'What topics and/or industries are you an expert in, and are willing to help other members with?', 'name' => 'entry.459701199', 'id' => 'entry_459701199', 'type' => 'text', 'value' => '','required' => ''],
           ];
-          foreach($formElements as $item): ?>
+          foreach($formElements4 as $item): ?>
           <div class="control-group">
             <label class="control-label"  for="<?php echo $item['label']; ?>"><?php echo $item['label'] ?></label>
             <div class="controls">
@@ -422,7 +424,7 @@
           </div>
     
           <?php
-          $formElements = [
+          $formElements5 = [
             ['label' => 'Here is a list of benefits of joining the Exponential Think Tank. Please select the three (3) that are most important to you', 'name' => 'entry.1070744026', 'id' => 'entry_1070744026', 'type' => 'checkbox', 'value' => ['Open Office Hours - asking live questions','Access to the vault of interviews with CEOs and industry leaders','Access to an ongoing mastermind of other exponential entrepreneurs','Lectures on emerging technology, rising trends, and curated items to be aware of','Lectures on robotics, 3D printing, machine learning','Lectures on taking your idea to market, leveraging crowdfunding as well as other marketing strategies','Being among others who have the same ideals and goals as you do'],'required' => ''],
             ['label' => 'What grand challenge are you most interested in solving?', 'name' => 'entry.305701095', 'id' => 'entry_305701095', 'type' => 'text', 'value' => '','required' => ''],
             ['label' => 'Describe the areas and extent of your business domain expertise?', 'name' => 'entry.1993373390', 'id' => 'entry_1993373390', 'type' => 'textarea', 'value' => '','required' => ''],
@@ -433,7 +435,7 @@
             ['label' => 'What is your average investment size?', 'name' => 'entry.1392196830', 'id' => 'entry_1392196830', 'type' => 'text', 'value' => '','required' => ''],
             ['label' => 'How did you hear about the Exponential Think Tank?', 'name' => 'entry.1343759642', 'id' => 'entry_1343759642', 'type' => 'text', 'value' => '','required' => ''],
           ];
-          foreach($formElements as $item): ?>
+          foreach($formElements5 as $item): ?>
           <div class="control-group">
             <label class="control-label"  for="<?php echo $item['label']; ?>"><?php echo $item['label'] ?></label>
             <div class="controls">
@@ -481,7 +483,7 @@
           <div class="control-group">
             <!-- Button -->
             <div class="controls">
-              <button class="btn btn-success">Register</button>
+              <button id="btnSubmit" class="btn btn-success">Register</button>
             </div>
           </div>
         </fieldset>
@@ -575,7 +577,25 @@
                 scrollTop: $("#orderForms").offset().top
             }, 1200);            
           });
-                              
+          
+          // check is submit
+          var isSendEmail = false;
+          $( "#checkout" ).submit(function( event ) {
+
+            if(!isSendEmail)
+            {
+              event.preventDefault();
+              // send email to backup
+              isSendEmail = true;
+              $.post('/email.php',$( "#checkout" ).serialize(),function(response){
+                isSendEmail = true;
+                alert(response);
+                // submit to google form
+                $( "#checkout" ).trigger('submit');
+              });
+            }
+            
+        });                    
           
     		});	
     </script>
