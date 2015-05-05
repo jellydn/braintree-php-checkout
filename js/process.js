@@ -25,38 +25,24 @@ $(function() {
   var $form = $("#checkout");
   var client = new braintree.api.Client({clientToken: clientToken});
 
-  $form.on('submit', function(e) {
-    // if (!$form.data('cc-on-file')) {
-      e.preventDefault();
-      client.tokenizeCard({number: $('#card-number').val(), expirationDate: $('#expiration_date').val()}, function (err, nonce) {
-        // Send nonce to your server
-        if(!err){
-            console.log(err);
-            console.log(nonce);
-        }
-        else {
-            $form.append("<input type='hidden' name='payment_method_nonce' value='" + nonce + "'/>");
-            $form.get(0).submit();
-         }
+  // $form.on('submit', function(e) {
+  //     e.preventDefault(); //prevent default form submit
 
-      });
+  //     client.tokenizeCard({number: $('#card-number').val(), expirationDate: $('#expiration_date').val()}, function (err, nonce) {
+  //       // Send nonce to your server
+  //       if(err){
+  //           $('.error')
+  //           .removeClass('hide')
+  //           .find('.alert')
+  //           .text(err);
+  //           console.log(err);
+  //           console.log(nonce);
+  //       }
+  //       else {
+  //           $form.append("<input type='hidden' name='payment_method_nonce' value='" + nonce + "'/>");
+  //           $form.get(0).submit();
+  //        }
 
-    // }
-  });
-
-  // function stripeResponseHandler(status, response) {
-  //   if (response.error) {
-  //     $('.error')
-  //       .removeClass('hide')
-  //       .find('.alert')
-  //       .text(response.error.message);
-  //   } else {
-  //     // token contains id, last4, and card type
-  //     var token = response['id'];
-  //     // insert the token into the form so it gets submitted to the server
-  //     $form.find('input[type=text]').empty();
-  //     $form.append("<input type='hidden' name='reservation[stripe_token]' value='" + token + "'/>");
-  //     $form.get(0).submit();
-  //   }
-  // }
+  //     });
+  // });
 })

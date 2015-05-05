@@ -124,7 +124,7 @@
             </div>
              <div class='form-row'>
               <div class='col-xs-12 form-group card required'>
-                <label class='control-label'>Expired Data</label>
+                <label class='control-label'>Expired Date</label>
                 <input data-braintree-name="expiration_date" placeholder="MM/YY" required value="" id="expiration_date" autocomplete='off' class='form-control' size='20' type='text'>
               </div>
             </div>
