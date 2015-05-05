@@ -1,5 +1,6 @@
 <?php 
   $loader           = require __DIR__.'/vendor/autoload.php';
+  date_default_timezone_set('America/Los_Angeles');
 
   use DebugBar\StandardDebugBar;
 
@@ -17,19 +18,9 @@
   Braintree_Configuration::publicKey(getenv('PUBLIC_KEY'));
   Braintree_Configuration::privateKey(getenv('PRIVATE_KEY'));
   $nonce = $_POST["payment_method_nonce"];
-  // $debugbar["messages"]->addMessage($nonce);
-  // $debugbar["messages"]->addMessage($_POST);
-
-  list($firstName,$lastName) = explode(' ',$_POST['name']);
-
-  $result = Braintree_Customer::create(array(
-    'firstName' => $firstName,
-    'lastName' => $lastName,
-    'email' => $_POST['email'],
-    'paymentMethodNonce' => $nonce,
-));
-  $debugbar["messages"]->addMessage($result);
-
+  $hasCustomer = false;
+  $hasPayment = false;
+  $hasSubscription = false;
 ?>
 <style type="text/css">
   .gradient {
@@ -113,10 +104,20 @@
 
         <?php
 
-            if(!$result->success)
+            // step 1: create customer information
+            list($firstName,$lastName) = explode(' ',$_POST['name']);
+
+            $customer = Braintree_Customer::create(array(
+              'firstName' => $firstName,
+              'lastName' => $lastName,
+              'email' => $_POST['email']
+          ));
+            $debugbar["messages"]->addMessage($customer);
+
+            if(!$customer->success)
             {
               echo 'You have error: ';
-              foreach($result->errors->deepAll() AS $error) {
+              foreach($customer->errors->deepAll() AS $error) {
                 echo( $error->message . "\n");
               }
 
@@ -124,14 +125,54 @@
             }
             else
             {
-              echo 'Congratulation: You have been ordered.<br/>';
-              $paymentMethodToken = $result->customer->paymentMethods[0]->token;
-
-              $subscription = Braintree_Subscription::create(array(
-                'paymentMethodToken' => $paymentMethodToken,
-                'planId' => 'silver_plan'
+              $hasCustomer = true;
+              // step 2: create payment method
+              $result = Braintree_PaymentMethod::create(array(
+                'customerId' => $customer->customer->id,
+                'paymentMethodNonce' => $nonce,
+                'options' => array(
+                  'verifyCard' => true,
+                  'verificationMerchantAccountId' => getenv('MERCHANT_ACCOUNT_ID'),
+                  )
               ));
-              $debugbar["messages"]->addMessage($subscription);
+
+              if(!$result->success)
+              {
+                  echo 'You have error: ';
+                  foreach($result->errors->deepAll() AS $error) {
+                    echo( $error->message . "\n");
+                  }
+
+                  echo '<br/><a href="process.php"> Return to Order</a><br/>';
+              }
+              else {
+                  // step 3: subsciption
+                  $hasPayment = true;
+                  $paymentMethodToken = $result->paymentMethod->token;
+                  
+                  $subscription = Braintree_Subscription::create(array(
+                      'paymentMethodToken' => $paymentMethodToken,
+                      'planId' => 'silver_plan',
+                      'merchantAccountId'  => getenv('MERCHANT_ACCOUNT_ID')
+                  ));
+                  $debugbar["messages"]->addMessage($subscription);
+
+                  if(!$subscription->success)
+                  {
+                      echo 'You have error: ';
+                      foreach($subscription->errors->deepAll() AS $error) {
+                        echo( $error->message . "\n");
+                      }
+
+                      echo '<br/><a href="process.php"> Return to Order</a><br/>';
+                  }
+                  else {
+                      echo 'Congratulation: You have been ordered.<br/>';
+                      $hasSubscription = true;
+                  }
+              }
+
+
 
             }
         ?>
@@ -139,6 +180,19 @@
         </div>
       </div>
       </div>
+
+      <!-- Subscription form -->
+      <?php
+       if($hasSubscription):
+       ?>
+        <div class="container">      
+        <div class="row">
+        <div class="col-sm-10 col-sm-offset-1"> 
+        <iframe src="https://docs.google.com/forms/d/1mPOrwc3tuEjM1_R-AFB6kTf32ZRCDtzI_7wtHe9W71g/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        </div>
+        </div>
+        </div>
+      <?php endif; ?>
 
       <!-- Site footer -->
       <hr />

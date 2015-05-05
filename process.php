@@ -1,6 +1,7 @@
 <?php 
   $loader           = require __DIR__.'/vendor/autoload.php';
-  
+  date_default_timezone_set('America/Los_Angeles');
+
   use DebugBar\StandardDebugBar;
   
   $debugbar         = new StandardDebugBar();
