@@ -23,15 +23,22 @@ $(function() {
 
 $(function() {
   var $form = $("#checkout");
-  alert(clientToken);
+  var client = new braintree.api.Client({clientToken: clientToken});
+
   $form.on('submit', function(e) {
     // if (!$form.data('cc-on-file')) {
       e.preventDefault();
-      var client = new braintree.api.Client({clientToken: clientToken});
       client.tokenizeCard({number: $('#card-number').val(), expirationDate: $('#expiration_date').val()}, function (err, nonce) {
         // Send nonce to your server
-        console.log(err);
-        console.log(nonce);
+        if(err){
+            console.log(err);
+            console.log(nonce);
+        }
+        else {
+            $form.append("<input type='hidden' name='payment_method_nonce' value='" + nonce + "'/>");
+            $form.get(0).submit();
+         }
+
       });
 
     // }
