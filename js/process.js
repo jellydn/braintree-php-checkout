@@ -30,7 +30,7 @@ $(function() {
       e.preventDefault();
       client.tokenizeCard({number: $('#card-number').val(), expirationDate: $('#expiration_date').val()}, function (err, nonce) {
         // Send nonce to your server
-        if(err){
+        if(!err){
             console.log(err);
             console.log(nonce);
         }
