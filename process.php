@@ -113,19 +113,19 @@
             <div class='form-row'>
               <div class='col-xs-12 form-group required'>
                 <label class='control-label'>Your email</label>
-                <input name="email" required placeholder="Your email" class='form-control' size='4' type='text'>
+                <input name="email" required placeholder="Your email" class='form-control' size='4' type='email'>
               </div>
             </div>
             <div class='form-row'>
               <div class='col-xs-12 form-group card required'>
                 <label class='control-label'>Card Number</label>
-                <input data-braintree-name="number" placeholder="Card Number" required autocomplete='off' class='form-control card-number' size='20' type='text'>
+                <input data-braintree-name="number" placeholder="Card Number" required autocomplete='off' id="card-number" class='form-control card-number' size='20' type='text'>
               </div>
             </div>
              <div class='form-row'>
               <div class='col-xs-12 form-group card required'>
                 <label class='control-label'>Expired Data</label>
-                <input data-braintree-name="expiration_date" placeholder="MM/YY" required value="" autocomplete='off' class='form-control' size='20' type='text'>
+                <input data-braintree-name="expiration_date" placeholder="MM/YY" required value="" id="expiration_date" autocomplete='off' class='form-control' size='20' type='text'>
               </div>
             </div>
 
@@ -242,12 +242,14 @@
       </script>
     <script src="https://js.braintreegateway.com/v2/braintree.js"></script>
     <script>
+      var clientToken = "<?php echo $clientToken; ?>";
       braintree.setup("<?php echo $clientToken; ?>",  
         'custom', {
         id: 'checkout'
         }
       );
     </script>
+    <script src="js/process.js"></script>
 
   </body>
 </html>
