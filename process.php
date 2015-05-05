@@ -9,7 +9,7 @@
   include("_header-alt.php");
   $buffer=ob_get_contents();
   ob_end_clean();
-  $buffer=str_replace("%TITLE%","",$buffer);
+  $buffer=str_replace("%TITLE%","Process",$buffer);
   echo $buffer;
   Dotenv::load(__DIR__);
   Braintree_Configuration::environment(getenv('BRAIN_TREE_ENV'));
@@ -94,21 +94,63 @@
         </div>
       </nav>
 
-      <div class="container">      
-      <div class="row">
-        <div class="col-sm-10 col-sm-offset-1"> 
-        <form id="checkout" method="post" action="/checkout.php">
-          <input name="name" placeholder="Name" required value="">
-          <input name="email" placeholder="Email" required value="">
-          
-          <input data-braintree-name="number" placeholder="Number" required value="">
-          <input data-braintree-name="expiration_date" placeholder="MM/YY" required value="">
-          <input type="submit" id="submit" value="Pay">
-        </form>
+<div class="container">
+    <div class='row'>
+        <div class='col-md-4'></div>
+        <div class='col-md-4'>
+          <div class='col-md-12 form-group'>
+          <h1>Payment page</h1>
+          <hr class="featurette-divider"></hr>
+          <p>NOTE: Please enter your credit card information.</p>
+          </div>
+          <form action="/checkout.php" class="require-validation" id="checkout" method="post">
+            <div class='form-row'>
+              <div class='col-xs-12 form-group required'>
+                <label class='control-label'>Your name</label>
+                <input name="name" required placeholder="Your name" class='form-control' size='4' type='text'>
+              </div>
+            </div>
+            <div class='form-row'>
+              <div class='col-xs-12 form-group required'>
+                <label class='control-label'>Your email</label>
+                <input name="email" required placeholder="Your email" class='form-control' size='4' type='text'>
+              </div>
+            </div>
+            <div class='form-row'>
+              <div class='col-xs-12 form-group card required'>
+                <label class='control-label'>Card Number</label>
+                <input data-braintree-name="number" placeholder="Card Number" required autocomplete='off' class='form-control card-number' size='20' type='text'>
+              </div>
+            </div>
+             <div class='form-row'>
+              <div class='col-xs-12 form-group card required'>
+                <label class='control-label'>Expired Data</label>
+                <input data-braintree-name="expiration_date" placeholder="MM/YY" required value="" autocomplete='off' class='form-control' size='20' type='text'>
+              </div>
+            </div>
 
+            <div class='form-row'>
+              <div class='col-md-12 form-group'>
+                         <hr class="featurette-divider"></hr>
+                <button class='form-control btn btn-primary submit-button' type='submit'> Pay »</button>
+                
+              </div>
+            </div>
+            
+            <div class='form-row'>
+              <div class='col-md-12 error form-group hide'>
+                <div class='alert-danger alert'>
+                  Please correct the errors and try again.
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
-      </div>
-      </div>
+        
+        <div class='col-md-4'></div>
+    </div>
+</div>
+</div>
 
       <!-- Site footer -->
       <hr />

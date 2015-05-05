@@ -9,7 +9,7 @@
   include("_header-alt.php");
   $buffer=ob_get_contents();
   ob_end_clean();
-  $buffer=str_replace("%TITLE%","",$buffer);
+  $buffer=str_replace("%TITLE%","Order",$buffer);
   echo $buffer;
 ?>
 <style type="text/css">

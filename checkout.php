@@ -10,7 +10,7 @@
   include("_header-alt.php");
   $buffer=ob_get_contents();
   ob_end_clean();
-  $buffer=str_replace("%TITLE%","",$buffer);
+  $buffer=str_replace("%TITLE%","Check out",$buffer);
   echo $buffer;
   Dotenv::load(__DIR__);
   Braintree_Configuration::environment(getenv('BRAIN_TREE_ENV'));
