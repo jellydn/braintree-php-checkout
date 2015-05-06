@@ -164,7 +164,7 @@ textarea {
 
             if(!$customer->success)
             {
-              echo 'You have error: ';
+              echo 'There has been an error: ';
               foreach($customer->errors->deepAll() AS $error) {
                 echo( $error->message . "\n");
               }
@@ -188,7 +188,7 @@ textarea {
 
               if(!$result->success)
               {
-                  echo 'You have error: '. $result->message;
+                  echo 'There has been an error: '. $result->message;
                   foreach($result->errors->deepAll() AS $error) {
                     echo ( $error->message . "\n");
                   }
@@ -209,7 +209,7 @@ textarea {
 
                   if(!$subscription->success)
                   {
-                      echo 'You have error: ';
+                      echo 'There has been an error: ';
                       foreach($subscription->errors->deepAll() AS $error) {
                         echo( $error->message . "\n");
                       }
@@ -217,7 +217,7 @@ textarea {
                       echo '<a href="process.php">Return to Order</a>';
                   }
                   else {
-                      echo 'Congratulation: You have been ordered.<br/>';
+                      echo 'Your order has been successfully processed.  Please complete the form below.<br/>';
                       $hasSubscription = true;
                   }
               }
@@ -728,8 +728,18 @@ textarea {
     </script>
     <script src="https://js.braintreegateway.com/v2/braintree.js"></script>
     <?php 
-         echo $debugbarRenderer->render() 
+         // echo $debugbarRenderer->render() 
     ?>
-
+<!-- Hotjar Tracking Code for exponentialthinktank.com -->
+<script>
+    (function(f,b){
+        var c;
+        f.hj=f.hj||function(){(f.hj.q=f.hj.q||[]).push(arguments)};
+        f._hjSettings={hjid:32701, hjsv:4};
+        c=b.createElement("script");c.async=1;
+        c.src="//static.hotjar.com/c/hotjar-"+f._hjSettings.hjid+".js?sv="+f._hjSettings.hjsv;
+        b.getElementsByTagName("head")[0].appendChild(c); 
+    })(window,document);
+</script>
   </body>
 </html>

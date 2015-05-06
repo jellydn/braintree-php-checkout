@@ -9,7 +9,7 @@
   include("_header-alt.php");
   $buffer=ob_get_contents();
   ob_end_clean();
-  $buffer=str_replace("%TITLE%","Order",$buffer);
+  $buffer=str_replace("%TITLE%","Friend of Tech Guys",$buffer);
   echo $buffer;
 ?>
 <style type="text/css">
@@ -90,10 +90,8 @@
       
       <div class="container">  
         <div class="row text-center">
-          <h2 class="mb0 mt10 t24"><em>Urgent Executive Alert:</em></h2>
-          <h1 class="mb0 mt10 mb30 lh46">You are charged with setting direction and you're good at it. But the best captain sailing the high seas can't win against a tsunami's tidal wave. <span class="dblock oj">And you are about to face one.</span></h1>
-          <!--<h2 class="mt10 mb30 t24" style="line-height:32px;"><em>Having a chief marketing officer on staff can be cripplingly expensive. The same is true about a chief technology officer, or a chief Science Officer. You need their expertise to make sure your company is making the right moves, just not their price! Here’s the good news: You don’t need in-house executive level officers in order to have a high level of confidence in your mission-critical business decisions...</em></h2>-->
-          
+          <h2 class="mb0 mt10 t24"><em>Friends of Tech Guys:</em></h2>
+          <h1 class="mb0 mt10 mb30 lh46">You are charged with setting direction and you're good at it. But the best captain sailing the high seas can't win against a tsunami's tidal wave. <span class="dblock oj">It's predicted that 40% of today's Fortune 500 companies won't last another 10 years.</span></h1>          
         </div>
       </div>
     
@@ -122,7 +120,7 @@
     <div class="container">      
       <div class="row">
         <div class="col-sm-10 col-sm-offset-1"> 
-          <p><strong>Dear Business Executive,</strong>,</p>
+          <p><strong>Dear Friend</strong>,</p>
           
           <p><em>“40% of today's Fortune 500 companies will no longer exist in 10 years."</em></p>
 
@@ -138,7 +136,7 @@
           
           <p>But this isn’t about your phone. This is about how you and your business can weather the tide of exponential change, and how you can be on the bleeding edge of innovation in your industry.</p> 
           
-          <h2 class="text-center t34 blue"><strong>Become an Exponential Entrepreneur and take control of your company&mdash;and your industry</strong></h2>
+          <h2 class="text-center t34 blue"><strong>Become an Exponential Entrepreneur and take back <em>or keep</em> control of your industry</strong></h2>
           
           <p>When Peter H. Diamandis released his second New York Times Bestseller “BOLD: How to Go Big, Create Wealth and Impact the World,” he revealed a formula for detecting and taking advantage of emerging industries and technologies quickly, so you can serve the world and push humanity forward. He called that formula the “6 D’s of Exponential Growth.” Briefly...</p>
           
@@ -156,12 +154,12 @@
           
           <p>We are alive in a miraculous time. Never before has it been possible for a single person or a single company to dramatically change the way goods and services are rendered. With the advent of crowdfunding, products can be pre-sold to the most rabid early adopters, footing the bill for machine tooling and manufacturing costs. Risk is lower and profit percentages have increased.</p>
           
-          <p>If you are not having <em>monthly</em> conversations around the latest technological shifts, the emerging leaders in this tsunami, you’ll be washed out to sea. It’s your ability to have regular conversations with experts, who help you sort through what is important and what’s irrelevant—that’s what will give you the best chance to capitalize on your industry knowledge and experience.</p>
+          <p>If you are not having <em>monthly</em> conversations around the latest technological shifts, you’ll be washed out to sea. It’s your ability to have regular conversations with experts, who help you sort through what is important and relevant&mdash;that’s what will give you the best chance to capitalize on your industry knowledge and experience.</p>
           
           <p>You need more than a consultant. You need discipline experts who are patrolling the news channels and emerging discussion groups, finding the relevant updates in otherwise unrelated industries and helping you see how to apply those shifts to your business.</p>
           
           
-          <h2 class="text-center t34 blue"><strong>A mastermind of like-minded exponential entrepreneurs, freely sharing their industry shifts, facilitated by expert scientists, marketers and technologists is your best chance to stay oat matter for long-term success</strong></h2>                     
+          <h2 class="text-center t34 blue"><strong>A mastermind of like-minded exponential executives and entrepreneurs, freely sharing their industry shifts, facilitated by expert scientists, marketers and technologists is your best chance to stay competitive and innovative for long-term success</strong></h2>                     
     		  
        </div>
       </div>
@@ -173,7 +171,7 @@
       <div class="container">
         <div class="row text-center">
           <div class="col-sm-12">
-            <h1 class="mt0 white"><strong>Introducing Exponential Think Tank</strong></h1>
+            <h1 class="mt0 white"><strong>Exponential Think Tank</strong></h1>
             <h2 class="white t24 lhnorm"><strong>Exponential Think Tank</strong> and group forum are the future-focused executive’s answer to mission-critical business decisions and the way to stay up to speed on emerging science and technology that matter for long-term success</h2>
           </div>
         </div>
@@ -304,7 +302,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-sm-offset-1">
-          <p class="mb0 paragraph-reset" style="margin-top:50px;">In our ever-changing world, if you’re not keeping up the date with the latest technology and breakthroughs, your business is dead in the water. The <strong>Exponential Think Tank</strong> team will be finding and curating relevant content, adding it to the members portal. Conversations in the Think Tank will point to this content, and you'll only need to review what matters—not all the noise that exists online.</p>
+          <p class="mb0 paragraph-reset" style="margin-top:50px;">In our ever-changing world, if you’re not keeping up-to-date with the latest technology and breakthroughs, your business is dead in the water. The <strong>Exponential Think Tank</strong> team will be finding and curating relevant content, adding it to the members portal. Conversations in the Think Tank will point to this content, and you'll only need to review what matters—not all the noise that exists online.</p>
         </div>
         <div class="col-sm-4 text-center">
           <img class="img-responsive" src="/assets/img/portal-updates.jpg" />
@@ -345,7 +343,7 @@
       <div class="row">
         <div class="col-sm-6 col-sm-offset-1">
           <p class="paragraph-reset" style=""><strong>This is your chance to gain access to the Exponential Think Tank dedicated team of experts that have advised Peter, Joe and <em>hundreds</em> of other highly successful entrepreneurs and business owners.</strong></p>
-          <p class="mb0">During Open Office Hours, you’ll be able to ask questions your mission-critical questions, live, to technologists, business consultants, marketing advisors and scientists. Held every-other-week, this is your time to go beyond the typical interactions in the forum mastermind. You’ll be able to get answers to questions about growing your business and achieving your massively transformative purpose. Get plugged into a team that thinks with a bold and abundant mindset and is a big part of my own personal success!</p>
+          <p class="mb0">During Open Office Hours, you’ll be able to ask questions your mission-critical questions, live, to technologists, business consultants, marketing advisors and scientists. Held every-other-week, this is your time to go beyond the typical interactions in the forum mastermind. You’ll be able to get answers to questions about growing your business and achieving your massively transformative purpose (MTP), as defined by Peter H. Diamandis. Get plugged into a team of experts that think with a bold and abundant mindset.</p>
         </div>
         <div class="col-sm-4 text-center">
           <img class="img-responsive" src="/assets/img/bold-expert-team.jpg" />
@@ -365,7 +363,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-sm-offset-1">
-          <p class="paragraph-reset">As a <strong>Think Tank</strong> member, you’ll have <strong>access to a private, curated digital community</strong> where you and <em>up to three of your executives</em> can post your business-critical questions as often as you have them. Get crowdsourced answers from a trusted inner circle of advisors. This will be the active Q&A on strategy and discussion of Peter and Joe's concepts. Your executive team is invited to be part of this group.</p>
+          <p class="paragraph-reset">As a <strong>Think Tank</strong> member, you’ll have <strong>access to a private, digital community</strong> where you and <em>up to three of your executives</em> can post your business-critical questions as often as you have them. Get crowdsourced answers from a trusted inner circle of advisors. This will be the active Q&A on strategy and discussion of Peter and Joe's concepts. Your executive team is invited to be part of this group.</p>
           <p class="mb0"><strong>We’re building a close-knit group of entrepreneurs and executives that are driven to exhibit the exponential mindset in their daily lives.</strong> In addition to the community connections, you’ll also get exclusive updates and be able to interact with the same advisors Peter and Joe lean on for marketing, science and technology questions.</p>
         </div>
         <div class="col-sm-4 text-center">
