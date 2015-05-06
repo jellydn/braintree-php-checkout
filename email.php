@@ -24,6 +24,8 @@ $questions = [
             ['label' => 'How many Twitter followers do you have?', 'name' => 'entry.432404442', 'id' => 'entry_432404442', 'type' => 'text', 'value' => '','required' => ''],
             ['label' => 'How many Facebook friends do you have?', 'name' => 'entry.24323521', 'id' => 'entry_24323521', 'type' => 'text', 'value' => '','required' => ''],
             ['label' => 'How many G+ followers do you have?', 'name' => 'entry.769919172', 'id' => 'entry_769919172', 'type' => 'text', 'value' => '','required' => ''],
+            ['label' => 'Company Name', 'name' => 'entry.1641283134', 'id' => 'entry_1641283134', 'type' => 'text', 'value' => '','required' => ''],
+            ['label' => 'Company Website', 'name' => 'entry.602407668', 'id' => 'entry_602407668', 'type' => 'text', 'value' => '','required' => ''],
             ['label' => 'Your title', 'name' => 'entry.868883626', 'id' => 'entry_868883626', 'type' => 'text', 'value' => '','required' => ''],
             ['label' => 'Select your Industry', 'name' => 'entry.238603809', 'id' => 'entry_238603809', 'type' => 'checkbox', 'value' => ['Agriculture','Grocery','Accounting','Health Care','Advertising','Internet Publishing','Aerospace','Investment Banking','Aircraft','Legal','Manufacturing','Apparel & Accessories','Motion Picture & Video','Automotive','Music','Banking','Online Auctions','Brokerage, M&A','Biotechnology','Pharmaceuticals','Call Centers','Private Equity','Cargo Handling','Publishing','Chemical','Real Estate','Copywriting, Marketing','Retail & Wholesale','Consulting','Securities & Commodity Exchanges','Consumer Products','Service','Cosmetics','Defense','Software','Sports','Education','Technology','Electronics','Telecommunications','Energy','Television','Entertainment & Leisure','Transportation','Executive Search','Trucking','Financial Services','Venture Capital','Food, Beverage & Tobacco'],'required' => ''],
             ['label' => 'What does your company do in this industry?', 'name' => 'entry.1459909749', 'id' => 'entry_1459909749', 'type' => 'text', 'value' => '','required' => ''],
@@ -60,7 +62,7 @@ $email = $mg->sendMessage($domain, array('from'    => getenv('EMAIL_LOGIN'),
 'to'      => getenv('EMAIL_INFO'), 
 'subject' => 'Order #' . date('m-d-Y H:i:s'), 
 'text'    => print_r($result,true)));
-
+print_r($_POST);
 echo ('Thank you for your order.');
 
 ?>

@@ -258,9 +258,9 @@
             </div>
           </div>
           <?php endforeach; ?>
-          <div id="legend">
-            <legend class="">Company Information
-</legend>
+          <div id="legend2">
+           Company Information
+          </legend>
           </div>
           <p class="help-block">If applicable
 </p>
@@ -301,7 +301,7 @@
             </div>
           </div>
           <?php endforeach; ?>
-                 <div id="legend">
+                 <div id="legend3">
             <legend class="">Background and History
 </legend>
           </div>
@@ -355,7 +355,7 @@
           </div>
           <?php endforeach; ?>
        
-          <div id="legend">
+          <div id="legend4">
             <legend class="">For Start-Ups
 </legend>
           <p class="help-block">If applicable
@@ -418,7 +418,7 @@
             </div>
           </div>
           <?php endforeach; ?>
-          <div id="legend">
+          <div id="legend5">
             <legend class="">Business Impact
 </legend>
           </div>
