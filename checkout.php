@@ -24,6 +24,53 @@
   $firstName=$lastName=$email="";
 ?>
 <style type="text/css">
+
+legend .glyphicon {
+  margin-top: -7px;
+}
+
+.error-report {
+  padding: 10px 25px 10px;
+  background: #fcf8e3;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  border-top: 1px solid #ccc;
+}
+
+.control-label {
+  margin-bottom: 10px !important;
+  float: left;
+  width: 100%;
+}
+
+h1 legend {
+  font-size: 32px;
+  padding-bottom: 15px;
+  width: 100%;
+  /* text-align: center; */
+}
+
+label.control-label {
+    font-family: 'Roboto', arial,sans-serif;
+    margin:5px 0px;
+    float:left;
+    width:100%;
+    text-align:left !important;
+}
+
+.control-label,
+select,
+option,
+.controls {
+      font-family: 'Roboto', arial,sans-serif;
+}
+
+textarea {
+  float: left;
+  width: 100%;
+}
+
   .gradient {
     background: #7873eb; /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -101,7 +148,7 @@
       
        <div class="container">      
       <div class="row">
-        <div class="col-sm-10 col-sm-offset-1"> 
+        <div class="col-sm-10 col-sm-offset-1 error-report"> 
 
         <?php
 
@@ -143,10 +190,10 @@
               {
                   echo 'You have error: '. $result->message;
                   foreach($result->errors->deepAll() AS $error) {
-                    echo( $error->message . "\n");
+                    echo ( $error->message . "\n");
                   }
 
-                  echo '<br/><a href="process.php"> Return to Order</a><br/>';
+                  echo '<br/><a href="process.php" class="btn btn-default">Return to Order</a><br/>';
               }
               else {
                   // step 3: subsciption
@@ -167,7 +214,7 @@
                         echo( $error->message . "\n");
                       }
 
-                      echo '<br/><a href="process.php"> Return to Order</a><br/>';
+                      echo '<a href="process.php">Return to Order</a>';
                   }
                   else {
                       echo 'Congratulation: You have been ordered.<br/>';
@@ -186,28 +233,29 @@
 
       <!-- Subscription form -->
       <?php
-       if($hasSubscription):
+  if($hasSubscription):
        ?>
-        <!-- <div class="container">      
-        <div class="row">
-        <div class="col-sm-10 col-sm-offset-1"> 
-        <iframe src="https://docs.google.com/forms/d/1mPOrwc3tuEjM1_R-AFB6kTf32ZRCDtzI_7wtHe9W71g/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-        </div>
-        </div>
-        </div> -->
+      
+<form id="checkout" class="form-horizontal" action='https://docs.google.com/forms/d/<?php echo getenv('GOOGLE_FORM_ID') ?>/formResponse' method="POST">
+<input type="hidden" name="pageHistory" value="0,1,2,3,4">
+<fieldset>
+
         <div class="container">      
         <div class="row">
-        <div class="col-sm-10 col-sm-offset-1"> 
-        <form id="checkout" class="form-horizontal" action='https://docs.google.com/forms/d/<?php echo getenv('GOOGLE_FORM_ID') ?>/formResponse' method="POST">
-        <fieldset>
+        <div class="col-sm-10 col-sm-offset-1 text-center"> 
+        
+          <br><br>
           <div id="legend">
-            <legend class="">Exponential Think Tank Application Form
-</legend>
+            <legend class=""><h1 class="t44 mt0"><strong>Exponential Think Tank Application Form</strong></h1></legend>
           </div>
+
+
           <p class="help-block">Our goal at the Exponential Think Tank is to admit all those who qualify, and keep the caliber of the conversations has high as possible. By filling in this required application form, the facilitators in the Think Tank will be able to review if you're a qualified fit. All applicants will have a phone call with a group facilitator before being finally approved into the group. 
 </p>
           <p class="help-block">Please provide as much information as you can in the questions below.</p>
 
+<br><br>
+<div class="row">
           <?php
           $formElements = [
             ['label' => 'Fist Name', 'name' => 'entry.605345560', 'id' => 'entry_605345560', 'type' => 'text', 'value' => $firstName,'required' => 'required'],
@@ -222,13 +270,9 @@
             ['label' => 'Personal Website', 'name' => 'entry.956248565', 'id' => 'entry_956248565', 'type' => 'text', 'value' => '','required' => ''],
             ['label' => 'LinkedIn Profile URL', 'name' => 'entry.2014048069', 'id' => 'entry_2014048069', 'type' => 'text', 'value' => '','required' => ''],
             ['label' => 'Twitter handle', 'name' => 'entry.624236440', 'id' => 'entry_624236440', 'type' => 'text', 'value' => '','required' => ''],
-            ['label' => 'If you have an email list, how many are on it?', 'name' => 'entry.108725597', 'id' => 'entry_108725597', 'type' => 'text', 'value' => '','required' => ''],
-            ['label' => 'How many Twitter followers do you have?', 'name' => 'entry.432404442', 'id' => 'entry_432404442', 'type' => 'text', 'value' => '','required' => ''],
-            ['label' => 'How many Facebook friends do you have?', 'name' => 'entry.24323521', 'id' => 'entry_24323521', 'type' => 'text', 'value' => '','required' => ''],
-            ['label' => 'How many G+ followers do you have?', 'name' => 'entry.769919172', 'id' => 'entry_769919172', 'type' => 'text', 'value' => '','required' => ''],
           ];
           foreach($formElements as $item): ?>
-          <div class="control-group">
+          <div class="control-group col-xs-12 col-sm-4">
             <label class="control-label"  for="<?php echo $item['label']; ?>"><?php echo $item['label'] ?></label>
             <div class="controls">
               <?php switch ($item['type']) {
@@ -236,7 +280,55 @@
                 case 'email':
                   # code...
                ?>
-                  <input value="<?php echo $item['value'] ?>" type="<?php echo $item['type'] ?>" id="<?php echo $item['id'] ?>" name="<?php echo $item['name'] ?>" <?php echo $item['required'] ?> class="input-xlarge">
+                  <input value="<?php echo $item['value'] ?>" type="<?php echo $item['type'] ?>" id="<?php echo $item['id'] ?>" name="<?php echo $item['name'] ?>" <?php echo $item['required'] ?> class="form-control"><br>
+              <?php
+                  break;
+                case 'select':
+              ?>
+
+                 <select name="<?php echo $item['name'] ?>" id="<?php echo $item['id'] ?>" class="form-control input-xlarge">
+                    <?php foreach ($item['value'] as $value) {
+                        echo '<option value="' . $value . '">' . $value . '</option>';
+                    } ?>
+
+                 </select>
+              <?php
+                  break;
+                default:
+                  # code...
+                  break;
+              }
+              ?>
+            </div>
+          </div>
+
+
+
+
+          <?php endforeach; ?>
+</div>
+
+<hr>
+
+<div class="row">
+<?php
+          $formElementsLong = [
+            
+            ['label' => 'If you have an email list, how many are on it?', 'name' => 'entry.108725597', 'id' => 'entry_108725597', 'type' => 'text', 'value' => '','required' => ''],
+            ['label' => 'How many Twitter followers do you have?', 'name' => 'entry.432404442', 'id' => 'entry_432404442', 'type' => 'text', 'value' => '','required' => ''],
+            ['label' => 'How many Facebook friends do you have?', 'name' => 'entry.24323521', 'id' => 'entry_24323521', 'type' => 'text', 'value' => '','required' => ''],
+            ['label' => 'How many G+ followers do you have?', 'name' => 'entry.769919172', 'id' => 'entry_769919172', 'type' => 'text', 'value' => '','required' => ''],
+          ];
+          foreach($formElementsLong as $item): ?>
+          <div class="control-group col-xs-12 col-md-6">
+            <label class="control-label"  for="<?php echo $item['label']; ?>"><?php echo $item['label'] ?></label>
+            <div class="controls">
+              <?php switch ($item['type']) {
+                case 'text':
+                case 'email':
+                  # code...
+               ?>
+                  <input value="<?php echo $item['value'] ?>" type="<?php echo $item['type'] ?>" id="<?php echo $item['id'] ?>" name="<?php echo $item['name'] ?>" <?php echo $item['required'] ?> class="form-control"><br>
               <?php
                   break;
                 case 'select':
@@ -257,13 +349,28 @@
               ?>
             </div>
           </div>
+
+
+
+          
           <?php endforeach; ?>
-          <div id="legend2">
-           Company Information
-          </legend>
-          </div>
-          <p class="help-block">If applicable
-</p>
+</div>
+
+</div></div></div>
+
+
+
+
+
+
+
+
+<div class="bg-grey-lt mt50 mb50"> 
+   <div class="container">
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1">
+        <h1 class="t44 mt0"><div id="legend2"><legend class="blue"><span class="glyphicon glyphicon-info-sign"></span> &nbsp;&nbsp; Company Information</legend></div></h1>
+        
 
           <?php
           $formElements2 = [
@@ -271,7 +378,7 @@
             ['label' => 'Company Website', 'name' => 'entry.602407668', 'id' => 'entry_602407668', 'type' => 'text', 'value' => '','required' => ''],
           ];
           foreach($formElements2 as $item): ?>
-          <div class="control-group">
+          <div class="control-group col-xs-12 col-md-6">
             <label class="control-label"  for="<?php echo $item['label']; ?>"><?php echo $item['label'] ?></label>
             <div class="controls">
               <?php switch ($item['type']) {
@@ -279,13 +386,13 @@
                 case 'email':
                   # code...
                ?>
-                  <input value="<?php echo $item['value'] ?>" type="<?php echo $item['type'] ?>" id="<?php echo $item['id'] ?>" name="<?php echo $item['name'] ?>" <?php echo $item['required'] ?> class="input-xlarge">
+                  <input value="<?php echo $item['value'] ?>" type="<?php echo $item['type'] ?>" id="<?php echo $item['id'] ?>" name="<?php echo $item['name'] ?>" <?php echo $item['required'] ?> class="form-control input-lg"><br>
               <?php
                   break;
                 case 'select':
               ?>
 
-                 <select name="<?php echo $item['name'] ?>" id="<?php echo $item['id'] ?>" class="input-xlarge">
+                 <select name="<?php echo $item['name'] ?>" id="<?php echo $item['id'] ?>" class="input-xlarge form-control">
                     <?php foreach ($item['value'] as $value) {
                         echo '<option value="' . $value . '">' . $value . '</option>';
                     } ?>
@@ -301,19 +408,28 @@
             </div>
           </div>
           <?php endforeach; ?>
-                 <div id="legend3">
-            <legend class="">Background and History
-</legend>
-          </div>
+
+      </div>
+    </div>
+   </div>
+ </div>
+
+
+
+<div class="container">      
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1"> 
+          <h1 class="t44 mt0"><div id="legend3"><legend class="blue"><span class="glyphicon glyphicon-book"></span> &nbsp;&nbsp;Background and History</legend></div></h1>
+          
     
           <?php
           $formElements3 = [
             ['label' => 'Your title', 'name' => 'entry.868883626', 'id' => 'entry_868883626', 'type' => 'text', 'value' => '','required' => ''],
-            ['label' => 'Select your Industry', 'name' => 'entry.238603809', 'id' => 'entry_238603809', 'type' => 'checkbox', 'value' => ['Agriculture','Grocery','Accounting','Health Care','Advertising','Internet Publishing','Aerospace','Investment Banking','Aircraft','Legal','Manufacturing','Apparel & Accessories','Motion Picture & Video','Automotive','Music','Banking','Online Auctions','Brokerage, M&A','Biotechnology','Pharmaceuticals','Call Centers','Private Equity','Cargo Handling','Publishing','Chemical','Real Estate','Copywriting, Marketing','Retail & Wholesale','Consulting','Securities & Commodity Exchanges','Consumer Products','Service','Cosmetics','Defense','Software','Sports','Education','Technology','Electronics','Telecommunications','Energy','Television','Entertainment & Leisure','Transportation','Executive Search','Trucking','Financial Services','Venture Capital','Food, Beverage & Tobacco'],'required' => ''],
+            ['label' => 'Select your Industry', 'name' => 'entry.238603809', 'id' => 'entry_238603809', 'type' => 'checkbox', 'value' => ['Agriculture','Grocery','Accounting','Health Care','Advertising','Internet Publishing','Aerospace','Investment Banking','Aircraft','Legal','Manufacturing','Apparel & Accessories','Motion Picture & Video','Automotive','Music','Banking','Online Auctions','Brokerage, M&A','Biotechnology','Pharmaceuticals','Call Centers','Private Equity','Cargo Handling','Publishing','Chemical','Real Estate','Copywriting, Marketing','Retail & Wholesale','Consulting','Consumer Products','Service','Cosmetics','Defense','Software','Sports','Education','Technology','Electronics','Telecommunications','Energy','Television','Entertainment & Leisure','Transportation','Executive Search','Trucking','Financial Services','Venture Capital','Food, Beverage & Tobacco','Securities & Commodity Exchanges'],'required' => ''],
             ['label' => 'What does your company do in this industry?', 'name' => 'entry.1459909749', 'id' => 'entry_1459909749', 'type' => 'text', 'value' => '','required' => ''],
           ];
           foreach($formElements3 as $item): ?>
-          <div class="control-group">
+          <div class="control-group col-xs-12">
             <label class="control-label"  for="<?php echo $item['label']; ?>"><?php echo $item['label'] ?></label>
             <div class="controls">
               <?php switch ($item['type']) {
@@ -321,25 +437,27 @@
                 case 'email':
                   # code...
                ?>
-                  <input value="<?php echo $item['value'] ?>" type="<?php echo $item['type'] ?>" id="<?php echo $item['id'] ?>" name="<?php echo $item['name'] ?>" <?php echo $item['required'] ?> class="input-xlarge">
+                  <input value="<?php echo $item['value'] ?>" type="<?php echo $item['type'] ?>" id="<?php echo $item['id'] ?>" name="<?php echo $item['name'] ?>" <?php echo $item['required'] ?> class="form-control input-lg"><br>
               <?php
                   break;
                 case 'select':
               ?>
+                  <div class="col-xs-4">
+                     <select name="<?php echo $item['name'] ?>" id="<?php echo $item['id'] ?>" class="input-xlarge">
+                        <?php foreach ($item['value'] as $value) {
+                            echo '<option value="' . $value . '">' . $value . '</option>';
+                        } ?>
 
-                 <select name="<?php echo $item['name'] ?>" id="<?php echo $item['id'] ?>" class="input-xlarge">
-                    <?php foreach ($item['value'] as $value) {
-                        echo '<option value="' . $value . '">' . $value . '</option>';
-                    } ?>
-
-                 </select>
+                     </select>
+                   </div>
               <?php
                   break;
                   case 'checkbox':
                   ?>
                    <?php foreach ($item['value'] as $key => $value) { ?>
-
-                   <input type="<?php echo $item['type'] ?>" value="<?php echo $value; ?>" name="<?php echo $item['name'] ?>" id="<?php echo $item['id'] ?>_<?php echo $key;?>" class="input-xlarge"><?php echo $value; ?> &nbsp; <?php if($key && $key % 4 == 0) echo '</br>' ?>
+                   <div class="col-xs-12 col-sm-4">
+                     <input type="<?php echo $item['type'] ?>" value="<?php echo $value; ?>" name="<?php echo $item['name'] ?>" id="<?php echo $item['id'] ?>_<?php echo $key;?>" class="input-xlarge"><?php echo $value; ?> &nbsp; <?php if($key && $key % 4 == 0) echo '</br>' ?>
+                   </div>
                    <?php } ?>
 
                  </select>
@@ -354,13 +472,15 @@
             </div>
           </div>
           <?php endforeach; ?>
-       
-          <div id="legend4">
-            <legend class="">For Start-Ups
-</legend>
-          <p class="help-block">If applicable
-          </p>
-          </div>
+</div></div></div>
+
+
+<div class="bg-grey-lt mt50 mb50"> 
+   <div class="container">
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1">
+        <h1 class="t44 mt0"><div id="legend4"><legend class="blue"><span class="glyphicon glyphicon-leaf"></span> &nbsp;&nbsp; For Start-Ups</legend><p class="help-block">If applicable</p></div></h1>
+          
     
           <?php
           $formElements4 = [
@@ -375,7 +495,7 @@
             ['label' => 'What topics and/or industries are you an expert in, and are willing to help other members with?', 'name' => 'entry.459701199', 'id' => 'entry_459701199', 'type' => 'text', 'value' => '','required' => ''],
           ];
           foreach($formElements4 as $item): ?>
-          <div class="control-group">
+          <div class="control-group col-xs-12">
             <label class="control-label"  for="<?php echo $item['label']; ?>"><?php echo $item['label'] ?></label>
             <div class="controls">
               <?php switch ($item['type']) {
@@ -383,13 +503,13 @@
                 case 'email':
                   # code...
                ?>
-                  <input value="<?php echo $item['value'] ?>" type="<?php echo $item['type'] ?>" id="<?php echo $item['id'] ?>" name="<?php echo $item['name'] ?>" <?php echo $item['required'] ?> class="input-xlarge">
+                  <input value="<?php echo $item['value'] ?>" type="<?php echo $item['type'] ?>" id="<?php echo $item['id'] ?>" name="<?php echo $item['name'] ?>" <?php echo $item['required'] ?> class="form-control">
               <?php
                   break;
                 case 'select':
               ?>
 
-                 <select name="<?php echo $item['name'] ?>" id="<?php echo $item['id'] ?>" class="input-xlarge">
+                 <select name="<?php echo $item['name'] ?>" id="<?php echo $item['id'] ?>" class="">
                     <?php foreach ($item['value'] as $value) {
                         echo '<option value="' . $value . '">' . $value . '</option>';
                     } ?>
@@ -401,7 +521,7 @@
                   ?>
                    <?php foreach ($item['value'] as $key => $value) { ?>
 
-                   <input type="<?php echo $item['type'] ?>" value="<?php echo $value; ?>" name="<?php echo $item['name'] ?>" id="<?php echo $item['id'] ?>_<?php echo $key;?>" class="input-xlarge"><?php echo $value; ?><br/>
+                   <input type="<?php echo $item['type'] ?>" value="<?php echo $value; ?>" name="<?php echo $item['name'] ?>" id="<?php echo $item['id'] ?>_<?php echo $key;?>" class=""><?php echo $value; ?><br/>
                    <?php } ?>
 
                  </select>
@@ -418,10 +538,16 @@
             </div>
           </div>
           <?php endforeach; ?>
-          <div id="legend5">
-            <legend class="">Business Impact
-</legend>
-          </div>
+
+</div></div></div></div>
+
+
+
+   <div class="container">
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1">
+
+          <h1 class="t44 mt0"><div id="legend5"><legend class="blue"><span class="glyphicon glyphicon-briefcase"></span> &nbsp;&nbsp;Business Impact</legend></div></h1>
     
           <?php
           $formElements5 = [
@@ -444,7 +570,7 @@
                 case 'email':
                   # code...
                ?>
-                  <input value="<?php echo $item['value'] ?>" type="<?php echo $item['type'] ?>" id="<?php echo $item['id'] ?>" name="<?php echo $item['name'] ?>" <?php echo $item['required'] ?> class="input-xlarge">
+                  <input value="<?php echo $item['value'] ?>" type="<?php echo $item['type'] ?>" id="<?php echo $item['id'] ?>" name="<?php echo $item['name'] ?>" <?php echo $item['required'] ?> class="form-control">
               <?php
                   break;
                 case 'select':
@@ -479,7 +605,8 @@
             </div>
           </div>
           <?php endforeach; ?>
-       
+          <br/>
+
           <div class="control-group">
             <!-- Button -->
             <div class="controls">

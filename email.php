@@ -62,7 +62,7 @@ $email = $mg->sendMessage($domain, array('from'    => getenv('EMAIL_LOGIN'),
 'to'      => getenv('EMAIL_INFO'), 
 'subject' => 'Order #' . date('m-d-Y H:i:s'), 
 'text'    => print_r($result,true)));
-print_r($_POST);
+// print_r($_POST);
 echo ('Thank you for your order.');
 
 ?>

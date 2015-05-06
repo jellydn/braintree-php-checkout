@@ -96,43 +96,55 @@
 
 <div class="container">
     <div class='row'>
-        <div class='col-md-4'></div>
-        <div class='col-md-4'>
+
+        <div class='col-sm-6 col-sm-offset-3'>
+
+          <div class="row">
           <div class='col-md-12 form-group'>
-          <h1>Payment page</h1>
-          <hr class="featurette-divider"></hr>
-          <p>By clicking "Confirm," you are agreeing to an immediate charge of $500 for conditional access into the Exponential Think Tank. After your application is reviewed, you will either be declared a member in good standing or subject to refund. If you are not a good fit, a refund for the entire $500 will be given. If you're found to be the type of member we're looking for, you'll be billed $500 every 30 days until you cancel. You are welcome to cancel at any time.</p>
+            <h1><span class="oj">Payment</span> page</h1>
+            <hr class="featurette-divider"></hr>
+            <p>By clicking "Confirm," you are agreeing to an immediate charge of $500 for conditional access into the Exponential Think Tank. After your application is reviewed, you will either be declared a member in good standing or subject to refund. If you are not a good fit, a refund for the entire $500 will be given. If you're found to be the type of member we're looking for, you'll be billed $500 every 30 days until you cancel. You are welcome to cancel at any time.</p>
+            <hr class="featurette-divider"></hr>
           </div>
+          </div>
+
+          <div class="row">
           <form action="/checkout.php" class="require-validation" id="checkout" method="post">
+
             <div class='form-row'>
               <div class='col-xs-12 form-group required'>
                 <label class='control-label'>Your name</label>
                 <input name="name" required placeholder="Your name" class='form-control' size='4' type='text'>
               </div>
             </div>
+
             <div class='form-row'>
               <div class='col-xs-12 form-group required'>
                 <label class='control-label'>Your email</label>
                 <input name="email" required placeholder="Your email" class='form-control' size='4' type='email'>
               </div>
             </div>
+
             <div class='form-row'>
-              <div class='col-xs-12 form-group card required'>
+              <div class='col-xs-8 form-group card required'>
                 <label class='control-label'>Card Number</label>
                 <input data-braintree-name="number" placeholder="Card Number" required autocomplete='off' id="card-number" class='form-control card-number' size='20' type='text'>
               </div>
-            </div>
-             <div class='form-row'>
-              <div class='col-xs-12 form-group card required'>
-                <label class='control-label'>Expired Date</label>
-                <input data-braintree-name="expiration_date" placeholder="MM/YY" required value="" id="expiration_date" autocomplete='off' class='form-control' size='20' type='text'>
+                <div class='form-row'>
+                <div class='col-xs-4 form-group card required'>
+                  <label class='control-label'>Expired Date</label>
+                  <input data-braintree-name="expiration_date" placeholder="MM/YY" required value="" id="expiration_date" autocomplete='off' class='form-control' size='20' type='text'>
+                </div>
               </div>
             </div>
 
+             
+
             <div class='form-row'>
-              <div class='col-md-12 form-group'>
-                         <hr class="featurette-divider"></hr>
-                <button class='form-control btn btn-primary submit-button' type='submit'> Confirm »</button>
+              <hr class="featurette-divider"></hr>
+              <div class='col-xs-12 col-sm-4 form-group'>
+                         
+                <button class='t21 btn btn-info submit-button' type='submit'><span class="glyphicon glyphicon-circle-arrow-right" style="vertical-align:baseline;"></span> Confirm »</button>
                 
               </div>
             </div>
@@ -145,6 +157,8 @@
               </div>
             </div>
           </form>
+        </div>
+
         </div>
         
         <div class='col-md-4'></div>

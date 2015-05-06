@@ -2,7 +2,7 @@
       <hr />
       <footer class="footer mb50">
         <div class="container text-center">
-          <p class="t12 mb0">Copyright &copy; 2015,  PHD Ventures &mdash; 800 Corporate Pointe Suite 350, Culver City, CA 90230 &mdash; <a href="mailto:support@boldbook.com" target="_blank">support@boldbook.com</a></p>
+          <p class="t12 mb0">Copyright &copy; 2015,  Exponential Think Tank &mdash; 9611 N US HWY 1, #299, Sebastian, FL 32958 &mdash; <a href="mailto:support@exponentialthinktank.com" target="_blank">support@boldbook.com</a></p>
           <p class="mt0 t12"><a href="#" data-toggle="modal" data-target="#modalContact">Contact Us</a> &mdash; <a href="#" data-toggle="modal" data-target="#modalPrivacy">Terms and Conditions</a> &mdash; <a href="#" data-toggle="modal" data-target="#modalPrivacy">Privacy Policy</a> &mdash; <a href="/articles/">Articles</a></p>
         </div>
       </footer>

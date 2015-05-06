@@ -101,7 +101,7 @@
         <div class="row">
           <div class="col-sm-10 col-sm-offset-1">
             <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" width="560" height="315" src="//www.youtube.com/embed/X7DYJlotsr4?rel=0&showinfo=0&controls=0&autoplay=0" frameborder="0" allowfullscreen></iframe>
+              <iframe src="//fast.wistia.net/embed/iframe/fivqde8uny" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe><script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
             </div>         
           </div>          
         </div>              
@@ -122,7 +122,7 @@
     <div class="container">      
       <div class="row">
         <div class="col-sm-10 col-sm-offset-1"> 
-          <p><strong>Dear business executive</strong>,</p>
+          <p><strong>Dear Business Executive,</strong>,</p>
           
           <p><em>“40% of today's Fortune 500 companies will no longer exist in 10 years."</em></p>
 
@@ -138,9 +138,9 @@
           
           <p>But this isn’t about your phone. This is about how you and your business can weather the tide of exponential change, and how you can be on the bleeding edge of innovation in your industry.</p> 
           
-          <h2 class="text-center t34 blue"><strong>If you don’t take action on this opportunity, your future success is not certain.</strong></h2>
+          <h2 class="text-center t34 blue"><strong>Become an Exponential Entrepreneur and take control of your company&mdash;and your industry</strong></h2>
           
-          <p>When Peter H. Diamandis released his second New York Times Bestseller “BOLD: How to Go Big, Create Wealth and Impact the World,” he revealed a formula for detecting and taking advantage of emerging industries and technologies quickly, so you can serve the world and push humanity forward. He called that formula the “6 D’s of Exponential Growth.”</p>
+          <p>When Peter H. Diamandis released his second New York Times Bestseller “BOLD: How to Go Big, Create Wealth and Impact the World,” he revealed a formula for detecting and taking advantage of emerging industries and technologies quickly, so you can serve the world and push humanity forward. He called that formula the “6 D’s of Exponential Growth.” Briefly...</p>
           
           <p>At first, a new technology may be <strong>deceptive</strong>. Did you know the engineers at Kodak first invented the digital camera way back in 1975? The problem was, the resolution was pitiful, so they made a strategic decision to keep it under wraps—to abandon development in lieu of selling more paper and chemicals.</p> 
           
@@ -150,21 +150,18 @@
           
           <p><strong>Digitization</strong> is a stage in exponential growth where something that was analog flips digital. <strong>Dematerialization</strong> and <strong>demonetization</strong> follow, with <strong>democratization</strong> of the technology being the final stage.</p> 
           
-          <p>We’ve seen this with the taxi industry with companies like Uber and Lyft. They’ve digitized the hailing of a taxi, and they’ve dematerialized the cars. Uber doesn’t own the cars they employ like the taxi companies of the past paradigm still do. Both Uber and Lyft have found ways to reduce the cost of a ride, meaning less cost to the consumer.</p> 
+          <p>We’ve seen this with the taxi industry with companies like Uber and Lyft. They’ve digitized the hailing of a taxi, and they’ve dematerialized the cars. Uber doesn’t own the cars they employ like the taxi companies of the past paradigm still do. Both Uber and Lyft have found ways to reduce the cost of a ride, meaning less cost to the consumer. With this in mind...</p> 
           
-          <h2 class="text-center t34 blue"><strong>How will your industry be disrupted?</strong></h2>
+          <h2 class="text-center t34 blue"><strong>How can you capitalize on your industry being disrupted?</strong></h2>
           
-          <p>You and I are in a miraculous time. Never before has it been possible for a single person, or a single company to dramatically change the way goods and services are rendered. With the advent of crowdfunding, products can be pre-sold to the most rabid early adopters, footing the bill for machine tooling and manufacturing costs. Risk is lower and profit percentages have increased.</p>
+          <p>We are alive in a miraculous time. Never before has it been possible for a single person or a single company to dramatically change the way goods and services are rendered. With the advent of crowdfunding, products can be pre-sold to the most rabid early adopters, footing the bill for machine tooling and manufacturing costs. Risk is lower and profit percentages have increased.</p>
           
           <p>If you are not having <em>monthly</em> conversations around the latest technological shifts, the emerging leaders in this tsunami, you’ll be washed out to sea. It’s your ability to have regular conversations with experts, who help you sort through what is important and what’s irrelevant—that’s what will give you the best chance to capitalize on your industry knowledge and experience.</p>
           
-          <p>Your competition might be hiring a consultant to jump into the middle of their business and try to find the right direction to grow their business. Even if you choose a savvy, experienced consultant, they’ll be pricey. They’ll need to spend time learning holistically about your business and your goals, and then take a stab at helping you. They’ll also be slow. They don’t have your experience. They don’t have what has gotten you to where you are—no consultant has what you have.</p>
+          <p>You need more than a consultant. You need discipline experts who are patrolling the news channels and emerging discussion groups, finding the relevant updates in otherwise unrelated industries and helping you see how to apply those shifts to your business.</p>
           
-          <p>That’s why you need to take the mission to start having a regular dialogue with your executive team, even if that’s just you and your business partner—or you and a group of people you trust. You need to know what’s in development in your industry and sector and how it will impact your business, so your 2-year plan isn’t foiled by a new disruptive technology.</p>
           
-          <h2 class="text-center t34 blue"><strong>In a world of noise and very little signal, you need a group of discipline experts facilitating conversations to help you curate the daily news to find what impacts you, and what can be thrown out.</strong></h2> 
-          
-          <p>Moreover, as Napoleon Hill wrote in “Think and Grow Rich,” one of the fastest ways to improve your financial position in life is to have regular mastermind meetings with others who share your same values. Values like providing value, serving our fellow humans, and building wealth—with an exponential mindset.</p>                     
+          <h2 class="text-center t34 blue"><strong>A mastermind of like-minded exponential entrepreneurs, freely sharing their industry shifts, facilitated by expert scientists, marketers and technologists is your best chance to stay oat matter for long-term success</strong></h2>                     
     		  
        </div>
       </div>
@@ -188,12 +185,12 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-10 col-sm-offset-1"> 
-    		  <p>For those who qualify for the Exponential Think Tank (ExTank), weekly conversations will be held with exponential ideas being shared.</p> 
+    		  <p>For those who qualify for the Exponential Think Tank, weekly conversations will be held with exponential ideas being shared.</p> 
           <p>Our team of discipline experts will facilitate discussions around the three most critical pieces of your business:</p>
     			
           <ul>
-    				<li>Science &mdash; From 3D prinitng, robotics, sensors and sensing to biohacking, wearables and quantum computing, our resident PhD will show you what’s new and what’s worth knowing about. He will comb through the latest developments in the field of science and present on topics that are worth your attention in laymans terms.</li> 
-            <li>Technology &mdash; From</li> 
+    		<li>Science &mdash; From 3D prinitng, robotics, sensors and sensing to biohacking, wearables and quantum computing, our resident PhD will show you what’s new and what’s worth knowing about. He will comb through the latest developments in the field of science and present on topics that are worth your attention in laymans terms.</li> 
+            <li>Technology &mdash; The group will cover concepts in technology such as cloud computing, virtual and augmented reality, machine learning and big data. Discussions around blockchain and cryptocurrencies regularly to keep you up to speed on digital payments, as well as keeping a vigilant watch on new developments driven by Moore's law and ensuring your business is implementing these techniques</li> 
             <li>Marketing &mdash; Peter Drucker, the famous management consultant said “because the purpose of business is to create a customer, the business enterprise has two–and only two–basic functions: marketing and innovation. Marketing and innovation produce results; all the rest are costs. Marketing is the distinguishing, unique function of the business.” Emerging science and technology are what will make you unique, marketing is how you’ll convey your value.</li>
     			</ul>
           
@@ -219,8 +216,8 @@
           <div class="row">
             <div class="col-sm-8">
               <ul>
-              	<li><strong>Emerging Technology, Scientific Discovery and Marketing Lectures</strong>: Twice each month, you’ll have access to live lectures where the ExTank team will lecture, along with founding members Peter H. Diamandis, Genius Network founder Joe Polish, and other very special guests. These lectures will be based around your needs, as well as content we think you need to be aware of.</li> 	
-            <li><strong>Twice a month Open Office Hours</strong>: In these hour-long sessions, you and other members, will have full access to the ExTank Team team. You’ll be able to ask specific questions around technology, science, marketing, strategy, planning, or whatever else your business needs to know.</li> 	
+              	<li><strong>Emerging Technology, Scientific Discovery and Marketing Lectures</strong>: Twice each month, you’ll have access to live lectures where the Think Tank team will lecture, along with founding members Peter H. Diamandis, Genius Network founder Joe Polish, and other very special guests. These lectures will be based around your needs, as well as content we think you need to be aware of.</li> 	
+            <li><strong>Twice a month Open Office Hours</strong>: In these hour-long sessions, you and other members will have full access to the Think Tank team. You’ll be able to ask specific questions around technology, science, marketing, strategy, planning, intellectual property or whatever else your business needs to know.</li> 	
             <li><strong>Access to the Members Forum group</strong>: This is for daily discussion around your business. Experience the mastermind effect when you post your question to the group and have others answer it. The group is lively, and we encourage you to invite three of your executive team to join - at no added cost.</li> 	
             <li><strong>Exclusive Membership Site</strong>: With over 57 hours of high-quality content already loaded into the membership site, we’ve created a massive repository of some of the best instruction on the planet. Peter Diamandis has provided dozens of interviews that he’s had with today’s top industry mavericks, as well as never-before-seen videos from his 2015 $10,000-a-ticket Abundance360 event in Beverly Hills. Joe Polish has provided his best foundational training to the membership site as well, in order to give you access to the best strategies to grow your organization with a rock-solid foundation. This repository grows every month, and as a member, you’ll receive immediate access.</li>	
             <li><strong>Done-For-You Emails</strong>: Every month, we’ll summarize the biggest group take-aways and craft an email for you. You’ll then be able to take that email and copy-paste it to your team, so they can all be abreast to the new education you’ve been a part of. This way, you’ll continue to lead your team with confidence, and give them the education without needing to do much explaining yourself. Even if you’re a team-of-one, these emails will help you by succinctly recapping the major discussions of the month.</li>
@@ -243,9 +240,9 @@
       <div class="row mt15">
         <div class="col-sm-12">
           <hr /> 
-          <h2 class="text-center t34 lhnorm blue mt0" style="line-height:normal !IMPORTANT;">As a member of <strong>ExTank</strong>, you’ll have access to the kind of content and instruction that will keep you on the bleeding edge. Each month, we’ll be hosting a brand-new webinar on the changing landscape of the entrepreneurial world. We’ll be showing you how to identify disrupting markets; how to build a huge community, secrets to raising capital and pitching to VC’s; exciting updates in 3D printing, AI, sensors and robots, and other topics that will keep you sharp.</h2>
+          <h2 class="text-center t34 lhnorm blue mt0" style="line-height:normal !IMPORTANT;">As a member of the <strong>Exponential Think Tank</strong>, you’ll have access to the kind of content and instruction that will keep you on the bleeding edge of your industry. Each month, we’ll be hosting a brand-new webinar on the changing landscape of the entrepreneurial world. We’ll be showing you how to identify disrupting markets; how to build a valuable community, secrets to raising capital and pitching to VC’s; exciting updates in 3D printing, AI, sensors and robots, and other topics that will keep you poised to make major disruption in your industry.</h2>
           <hr />
-          <h2 class="text-center t34 wt400 dkblue mt30 mb10"><strong><em>As an <strong>ExTank</strong> Member, you will receive access to:</em></strong></h2>
+          <h2 class="text-center t34 wt400 dkblue mt30 mb10"><strong><em>As a <strong>Think Tank</strong> member, you will receive access to:</em></strong></h2>
         </div>
       </div>
     </div>
@@ -282,7 +279,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-10 col-sm-offset-1">
-          <p class="paragraph-reset">As a member of <strong>ExTank</strong>, you’ll have access to over 50 interviews that Peter Diamandis has recorded with today’s entrepreneurial leaders. He's releasing an interview he did with Steve Jobs years ago, as well as recent interviews with young inventors, game theory experts, successful startup partners and other highly disruptive geniuses. These are the same interviews Peter has pulled many of the stories in <em>BOLD</em> from. Get the full story and hear their expertise yourself.</p>
+          <p class="paragraph-reset">As a member of the <strong>Think Tank</strong>, you’ll have access to over 50 interviews that Peter Diamandis has recorded with today’s entrepreneurial leaders. He's releasing an interview he did with Steve Jobs years ago, as well as recent interviews with young inventors, game theory experts, successful startup partners and other highly disruptive geniuses. These are the same interviews Peter has pulled many of the stories in <em>BOLD</em> from. Get the full story and hear their expertise yourself.</p>
           <p class=""><strong>The list of interviews includes:</strong></p>
         </div>
       </div>
@@ -307,7 +304,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-sm-offset-1">
-          <p class="mb0 paragraph-reset" style="margin-top:50px;">In our ever-changing world, if you’re not keeping up the date with the latest technology and breakthroughs, your business is dead in the water. The <strong>ExTank</strong> team will be finding and curating relevant content, adding it to the members portal. Conversations in the Think Tank will point to this content, and you'll only need to review what matters—not all the noise that exists online.</p>
+          <p class="mb0 paragraph-reset" style="margin-top:50px;">In our ever-changing world, if you’re not keeping up the date with the latest technology and breakthroughs, your business is dead in the water. The <strong>Exponential Think Tank</strong> team will be finding and curating relevant content, adding it to the members portal. Conversations in the Think Tank will point to this content, and you'll only need to review what matters—not all the noise that exists online.</p>
         </div>
         <div class="col-sm-4 text-center">
           <img class="img-responsive" src="/assets/img/portal-updates.jpg" />
@@ -327,7 +324,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-sm-offset-1">
-          <p class="mb0 paragraph-reset" style="margin-top:20px;">Every two weeks, we'll be offering a live lecture in two formats. The first week of the month, we will find and bring in talent to lecture on the future of science, technology or marketing. Topics will cover all aspects of business, becoming an educational platform for executives. The presenters will be industry leaders, with unique content, most of which hasn't been shared with any group before. The third week of the month, we'll be offering an "internal lecture" with one of the <strong>ExTank</strong> Officers, giving their take on things that deserve your attention.</p>
+          <p class="mb0 paragraph-reset" style="margin-top:20px;">Every two weeks, we'll be offering a live lecture in two formats. The first week of the month, we will find and bring in talent to lecture on the future of science, technology or marketing. Topics will cover all aspects of business, becoming an educational platform for executives. The presenters will be industry leaders, with unique content, most of which hasn't been shared with any group before. The third week of the month, we'll be offering an "internal lecture" with one of the <strong>Think Tank</strong> Officers, giving their take on things that deserve your attention.</p>
         </div>
         <div class="col-sm-4 text-center">
           <img class="img-responsive" src="/assets/img/portal-webinar.jpg" />
@@ -360,7 +357,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-10 col-sm-offset-1">
-            <h2 class="dkgrey t38 wt300"><span class="glyphicon glyphicon-thumbs-up oj"></span> <strong>ExTank</strong> Forum Community Access</h2>
+            <h2 class="dkgrey t38 wt300"><span class="glyphicon glyphicon-thumbs-up oj"></span> <strong>Think Tank</strong> Forum Community Access</h2>
           </div>                    
         </div>
       </div>
@@ -368,7 +365,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-sm-offset-1">
-          <p class="paragraph-reset">As an <strong>ExTank</strong> member, you’ll have <strong>access to a private, curated digital community</strong> where you and <em>up to three of your executives</em> can post your business-critical questions as often as you have them. Get crowdsourced answers from a trusted inner circle of advisors. This will be the active Q&A on strategy and discussion of Peter and Joe's concepts. Your executive team is invited to be part of this group.</p>
+          <p class="paragraph-reset">As a <strong>Think Tank</strong> member, you’ll have <strong>access to a private, curated digital community</strong> where you and <em>up to three of your executives</em> can post your business-critical questions as often as you have them. Get crowdsourced answers from a trusted inner circle of advisors. This will be the active Q&A on strategy and discussion of Peter and Joe's concepts. Your executive team is invited to be part of this group.</p>
           <p class="mb0"><strong>We’re building a close-knit group of entrepreneurs and executives that are driven to exhibit the exponential mindset in their daily lives.</strong> In addition to the community connections, you’ll also get exclusive updates and be able to interact with the same advisors Peter and Joe lean on for marketing, science and technology questions.</p>
         </div>
         <div class="col-sm-4 text-center">
@@ -409,7 +406,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-10 col-sm-offset-1">
-          <p>Exponential ThinkTank is an exclusive program that is only opening up to highly motivated, future-focused, big-picture entrepreneurs. If you apply, you will be conditionally pre-approved, pending submission of your Application. For members, we'll provide the best resources we have and really believe will help you move towards your goals.</p>
+          <p>The Exponential ThinkTank is an exclusive program that is only opening up to highly motivated, future-focused, big-picture entrepreneurs. If you apply, you will be conditionally pre-approved, pending submission of your Application. For members, we'll provide the best resources we have and really believe will help you move towards your goals.</p>
           <p class="mb0">By applying below, you're reserving a spot in the <strong>Exponential Think Tank</strong> membership class. Once your reservation is received, you'll receive an <strong>Exponential Think Tank</strong> Application to fill out. If the team has further questions or feels that you might not be a proper fit for the group, we will contact you to discuss them. <strong><em>It is critical for the success of the group that all members are coming in with the appropriate mindset and thinking</em></strong>. If it's determined that you're not a proper fit for the team, we will refund your reservation payment in full.</p>
         </div>
       </div>
@@ -420,11 +417,11 @@
       <div class="row">
         <div class="col-sm-10 col-sm-offset-1"> 
  			<h2 class="text-center t34 mt30 mb30"><strong>Not All Who Apply Will Be Admitted</strong></h2>
-			<p>Quite seriously, this program is not a good fit for everyone. This isn’t a group for wantrapreneurs, nor is it a group for big egos. The intention is to create an engaging discussion around science and technology, with the goal of keeping you and your business on a trajectory for major success. If you’re up for the challenge of slogging through the difficulties in your industry with the Exponential ThinkTank team  ready to help you, then...</p>
+			<p>Quite seriously, this program is not a good fit for everyone. This isn’t a group for wantrapreneurs, nor is it a group for big egos. The intention is to create an engaging discussion around science and technology, with the goal of keeping you and your business on a trajectory for major success. If you’re up for the challenge of slogging through the difficulties in your industry with the Exponential Think Tank team ready to help you, then...</p>
 			<hr />
       <h2 class="text-center t34 blue mt30 mb30"><strong><span class="glyphicon glyphicon-ok" style="vertical-align:baseline;"></span> Apply Today for Consideration</strong></h2>
       <hr />
-			<p>There is a lengthy application that you’ll need to fill out. We want to learn more about you, your business, your goals, and your past successes (and failures!) When you fill out an application, you’ll be called by one of our officers to have a conversation. If we deem you as a good fit, you’ll be enrolled in the program. All applicants will be given a “conditional approval” at the time of submitting an application. This means that you’ll have full access immediately into the service, but may have your access revoked upon the phone call.</p>
+			<p>There is a lengthy application that you’ll need to fill out. We want to learn more about you, your business, your goals, and your past successes and failures. When you fill out an application, you’ll be called by one of our officers to have a conversation. If we deem you as a good fit, you’ll be enrolled in the program. All applicants will be given a “conditional approval” at the time of submitting an application. This means that you’ll have full access immediately into the service, but may have your access revoked upon the phone call.</p>
 			
 <p>Group co-founder Peter Diamandis said that "40% of today’s Fortune 500 businesses won’t be around in another 10 years." They’ll get eaten alive by competition, or will become irrelevant with new technologies. Don’t fall into that trap—buttress your organization by having regular and powerful conversations around disruptive technologies, exponential growth and the happenings of industries you can learn directly from. Failure to do so will give you the same outcome Kodak, the inventor of the digital camera, had: Bankruptcy a few months before Instagram was acquired for $1B.</p>
 			
@@ -445,8 +442,8 @@
         <div class="row text-center">
           <div class="col-sm-12">
             <h1 class="t44 mt0"><strong>Apply for Membership</strong></h1>
-            <h2 class="t24 mt0">Our goal is to help entrepreneurs understand their true potential. Through Exponential Think Tank we can help you and your team achieve your potential by providing you the tools, the mindset and the inspiration to take your business to the next level.</h2>
-            <a href="#ordernow"><button class="btn btn-success t28 p1050 btn-wrap"><span class="glyphicon glyphicon-ok" style="vertical-align:baseline;"></span> <strong>Apply Now &raquo;</strong></button></a>
+            <h2 class="t24 mt0">By applying, you are confirming your desire to build an exponential organization, one that will have the best chance of standing the technological tsunami that is approaching.</h2>
+            <a href="process.php"><button class="btn btn-success t28 p1050 btn-wrap"><span class="glyphicon glyphicon-ok" style="vertical-align:baseline;"></span> <strong>Apply Now &raquo;</strong></button></a>
           </div>
         </div>
        </div>
@@ -476,7 +473,7 @@
         
           <div class="row">
           	<div class="col-sm-3 text-center"><img src="assets/img/joe-polish-circle.png" class="img-responsive" /></div>
-          	<div class="col-sm-9"><p class="mb0" style="margin-top:10px;"><strong>Joe Polish</strong> &mdash; Creator of Genius Network&reg; Interview Series, founder of Genius Network&reg; (also known as the 25K Group), and co-founder of 10XTalk.com, and ILoveMarketing.com, two highly popular free podcasts on iTunes. President of Piranha Marketing Inc. His marketing expertise has been utilized to build thousands of businesses and has generated hundreds of millions of dollars for his clients, ranging from large corporations to small family-owned businesses. Known for his entrepreneurial focus on value creation, connection, and contribution, Joe’s leadership is the reason he’s one of the most sought after marketers alive today.</p></div>
+          	<div class="col-sm-9"><p class="mb0" style="margin-top:10px;"><strong>Joe Polish</strong> &mdash; Creator of Genius Network&reg; Interview Series, founder of Genius Network&reg; (also known as the 25K Group), and co-founder of 10XTalk.com, and ILoveMarketing.com, two highly popular free podcasts on iTunes. President of Piranha Marketing Inc., Joe's marketing expertise has been utilized to build thousands of businesses and has generated hundreds of millions of dollars for his clients, ranging from large corporations to small family-owned businesses. Known for his entrepreneurial focus on value creation, connection, and contribution, Joe’s leadership is the reason he’s one of the most sought after marketers alive today.</p></div>
           </div>
           <hr class="mt30 mb30" />
           <div class="row">
@@ -486,7 +483,7 @@
           <hr class="mt30 mb30" />
           <div class="row">
           	<div class="col-sm-3 text-center"><img src="assets/img/vincent-mamo-circle.png" class="img-responsive" /></div>
-          	<div class="col-sm-9"><p class="mb0" style="margin-top:30px;"><strong>Dr. Vincent Mamo</strong> &mdash; Our Chief Science Officer. With a Ph.D. in Applied Physics from Georgetown University, Dr. Mamo brings a passion for science to the ExTank team. He is also a registered Patent Agent and former Patent Examiner at the USPTO. With a history of science-based startups and having helped <em>hundreds</em> of entrepreneurs with their patent filings, questions and even prosecution services, Dr. Mamo has the skills and experience to help you in a few unique ways.</p></div>
+          	<div class="col-sm-9"><p class="mb0" style="margin-top:30px;"><strong>Dr. Vincent Mamo</strong> &mdash; Our Chief Science Officer. With a Ph.D. in Applied Physics from Georgetown University, Dr. Mamo brings a passion for science to the Exponential Think Tank team. He is also a registered Patent Agent and former Patent Examiner at the USPTO. With a history of science-based startups and having helped <em>hundreds</em> of entrepreneurs with their patent filings, questions and even prosecution services, Dr. Mamo has the skills and experience to help you in a few unique ways.</p></div>
           </div>
           <hr class="mt30 mb30" />
           <div class="row">
@@ -508,7 +505,7 @@
       <hr />
       <footer class="footer mb50">
         <div class="container text-center">
-          <p class="t12 mb0">Copyright &copy; 2015 &mdash;  Exponential Think Tank &mdash; 800 Corporate Pointe Suite 350 - Culver City, CA 90230 &mdash; <a href="mailto:support@exponentialthinktank.com" target="_blank">support@exponentialthinktank.com</a></p>
+          <p class="t12 mb0">Copyright &copy; 2015,  Exponential Think Tank &mdash; 9611 N US HWY 1, #299, Sebastian, FL 32958 &mdash; <a href="mailto:support@exponentialthinktank.com" target="_blank">support@exponentialthinktank.com</a></p>
           <p class="mt0 t12"><a href="#" data-toggle="modal" data-target="#modalContact">Contact Us</a> &mdash; <a href="#" data-toggle="modal" data-target="#modalPrivacy">Terms and Conditions</a> &mdash; <a href="#" data-toggle="modal" data-target="#modalPrivacy">Privacy Policy</a></p>
         </div>
       </footer>
@@ -594,3 +591,5 @@
     </script>
   </body>
 </html>
+
+ 

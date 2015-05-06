@@ -22,7 +22,9 @@
       <script src="./assets/js/respond.min.js"></script>
     <![endif]-->
    
-    <?php echo $debugbarRenderer->renderHead() ?>
+    <?php 
+    // echo $debugbarRenderer->renderHead() 
+    ?>
 
         
     <script>
